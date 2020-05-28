@@ -1,10 +1,13 @@
-# Expérimentations avec Kubeflow 
+# ExpÃ©rimentations avec Kubeflow 
 
-Vous devez vous connecter au portail Azure **au moyen de vos justificatifs d’identité StatCan**.
+Vous devez vous connecter au portail Azure **au moyen de vos justificatifs dâ€™identitÃ© StatCan**.
 `prenom.nom@cloud.statcan.ca`. Vous pouvez le faire ici [sur le portail Azure](https://portal.azure.com).
 
-![Portail Azure : choisissez l’adresse `@cloud.statcan.ca`](../images/azure-login.png)
+![Portail Azure : choisissez lâ€™adresse `@cloud.statcan.ca`](../images/azure-login.png)
 
-## Démarrer avec les bloc-notes
+## DÃ©marrer avec les bloc-notes
+
+
+
 
 

@@ -1,56 +1,56 @@
 # Stockage
 
-La plateforme propose différents types de stockage, conçus 
-pour différents types de cas d’utilisation. Par conséquent, 
-cette section vous concerne, que vous soyez en train d’expérimenter, 
-de créer des pipelines, ou d’éditer.  
+La plateforme propose diffÃ©rents types de stockage, conÃ§us 
+pour diffÃ©rents types de cas dâ€™utilisation. Par consÃ©quent, 
+cette section vous concerne, que vous soyez en train dâ€™expÃ©rimenter, 
+de crÃ©er des pipelines, ou dâ€™Ã©diter.  
 
 En surface, il existe deux types de stockage :
 
-- des disques (aussi appelés volumes)
+- des disques (aussi appelÃ©s volumes)
 
 - des compartiments (stockage S3 ou "blob")
 
 
 ## Disques
 
-![Volumes de données](images/kubeflow_existing_volume.png)
+![Volumes de donnÃ©es](images/kubeflow_existing_volume.png)
 
-Les disques sont les systèmes de fichiers courants de type disque dur ou SSD. 
-Vous pouvez monter les disques dans votre serveur Kubeflow, et même si vous 
+Les disques sont les systÃ¨mes de fichiers courants de type disque dur ou SSD. 
+Vous pouvez monter les disques dans votre serveur Kubeflow, et mÃªme si vous 
 supprimez votre serveur, vous pouvez remonter les disques, car ils ne sont jamais 
-détruits par défaut. C’est un moyen très simple de stocker vos données, 
-et si vous partagez un espace de travail avec une équipe, tous les membres peuvent 
-utiliser le disque du même serveur (comme un lecteur partagé).
+dÃ©truits par dÃ©faut. Câ€™est un moyen trÃ¨s simple de stocker vos donnÃ©es, 
+et si vous partagez un espace de travail avec une Ã©quipe, tous les membres peuvent 
+utiliser le disque du mÃªme serveur (comme un lecteur partagÃ©).
 
 
 ## Compartiments
 
 
-![Compartiments/Stockage d’objets](images/minio_self_serve_bucket.png)
+![Compartiments/Stockage dâ€™objets](images/minio_self_serve_bucket.png)
 
-Les compartiments sont un peu plus compliqués, mais ils présentent trois avantages :
+Les compartiments sont un peu plus compliquÃ©s, mais ils prÃ©sentent trois avantages :
 
-- Le stockage de grandes quantités de données
-  - Les compartiments peuvent être énormes (bien plus grands que les disques durs), 
+- Le stockage de grandes quantitÃ©s de donnÃ©es
+  - Les compartiments peuvent Ãªtre Ã©normes (bien plus grands que les disques durs), 
     et ils sont rapides.
   
-- Le partage de données
-  - Vous pouvez partager des fichiers à partir d’un compartiment en partageant 
-    une URL que vouspouvez obtenir par l’intermédiaire d’une interface Web simple. 
-    C’est une excellente façon de partager des données avec des personnes à 
-    l'extérieur de votre espace de travail.
+- Le partage de donnÃ©es
+  - Vous pouvez partager des fichiers Ã  partir dâ€™un compartiment en partageant 
+    une URL que vouspouvez obtenir par lâ€™intermÃ©diaire dâ€™une interface Web simple. 
+    Câ€™est une excellente faÃ§on de partager des donnÃ©es avec des personnes Ã  
+    l'extÃ©rieur de votre espace de travail.
     
-- L’accès à la programmation
+- Lâ€™accÃ¨s Ã  la programmation
   - Plus important encore, il est beaucoup plus facile pour les pipelines et 
-    les navigateurs Web d’accéder aux données provenant de compartiments que 
-    d’un disque dur. Donc, si vous voulez utiliser des pipelines, il faut d'abord 
-    les configurer pour qu’ils fonctionnent avec un compartiment.
+    les navigateurs Web dâ€™accÃ©der aux donnÃ©es provenant de compartiments que 
+    dâ€™un disque dur. Donc, si vous voulez utiliser des pipelines, il faut d'abord 
+    les configurer pour quâ€™ils fonctionnent avec un compartiment.
     
 
 # Stockage en compartiment
 
-Nous offrons quatre compartiments d’instances de stockage :
+Nous offrons quatre compartiments dâ€™instances de stockage :
 
 **Libre-service**
 
@@ -67,17 +67,17 @@ Nous offrons quatre compartiments d’instances de stockage :
 
 ## Libre-service
 
-Dans chacune des trois options de libre-service, vous pouvez créer un compartiment personnel. 
-Pour vous connecter, il vous suffit d’utiliser **OpenID** comme ci-dessous.
+Dans chacune des trois options de libre-service, vous pouvez crÃ©er un compartiment personnel. 
+Pour vous connecter, il vous suffit dâ€™utiliser **OpenID** comme ci-dessous.
 
 
-![Compartiments/Stockage d’objets](images/minio_self_serve_login.png)
+![Compartiments/Stockage dâ€™objets](images/minio_self_serve_login.png)
 
-Une fois que vous êtes connecté, vous pouvez créer un compartiment personnel 
+Une fois que vous Ãªtes connectÃ©, vous pouvez crÃ©er un compartiment personnel 
 selon le format `prenom.nom`. Voir la photo ci-dessous.
 
 
-![Compartiments/Stockage d’objets](images/minio_self_serve_bucket.png)
+![Compartiments/Stockage dâ€™objets](images/minio_self_serve_bucket.png)
 
 ## Partage
 
@@ -86,6 +86,6 @@ Vous pouvez facilement partager des fichiers individuels.
 ![Partage de fichiers Minio](images/minio_self_serve_share.png)
 
 
-## Accès à la programmation
+## AccÃ¨s Ã  la programmation
 
-À FAIRE : Demander à Will et Zach
+Ã€ FAIRE : Demander Ã  Will et Zach

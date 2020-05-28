@@ -1,21 +1,21 @@
-# Applications Web personnalisées
+# Applications Web personnalisÃ©es
 
-Nous pouvons tout déployer, dans la mesure où il s’agit de logiciel libre, et nous 
+Nous pouvons tout dÃ©ployer, dans la mesure oÃ¹ il sâ€™agit de logiciel libre, et nous 
 pouvons le mettre dans un conteneur Docker (p. ex. applications NodeJS, Flask, Dash).
 
-![Exemple d’une application NodeJS](../images/readme/covid_ui.png)
+![Exemple dâ€™une application NodeJS](../images/readme/covid_ui.png)
 
 
 !!! exemple "Voir le code de source de cette application"
-    Nous intégrons ces types d’applications au serveur au moyen de GitHub.
-    La source de l’application ci-dessus est ici : [github.com/StatCan/covid19](https://github.com/StatCan/covid19).
+    Nous intÃ©grons ces types dâ€™applications au serveur au moyen de GitHub.
+    La source de lâ€™application ci-dessus est ici : [github.com/StatCan/covid19](https://github.com/StatCan/covid19).
 
 
 
-# Comment faire héberger votre application
+# Comment faire hÃ©berger votre application
 
-Si vous avez déjà une application Web dans un répertoire Git, dès qu’elle est placée dans un conteneur Docker, nous pouvons intégrer le répertoire Git dans le répertoire GitHub de StatCan et pointer une URL vers elle. Pour la mettre à jour, il vous suffit d’interagir avec le répertoire GitHub de StatCan au moyen de demandes d’extraction.
+Si vous avez dÃ©jÃ  une application Web dans un rÃ©pertoire Git, dÃ¨s quâ€™elle est placÃ©e dans un conteneur Docker, nous pouvons intÃ©grer le rÃ©pertoire Git dans le rÃ©pertoire GitHub de StatCan et pointer une URL vers elle. Pour la mettre Ã  jour, il vous suffit dâ€™interagir avec le rÃ©pertoire GitHub de StatCan au moyen de demandes dâ€™extraction.
 
 
-**Si vous avez des questions, n'hésitez pas à communiquer avec nous.**
+**Si vous avez des questions, n'hÃ©sitez pas Ã  communiquer avec nous.**
 

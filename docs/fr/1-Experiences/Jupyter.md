@@ -1,34 +1,34 @@
 # Jupyter
 
-## Expérience conviviale de R et Python
+## ExpÃ©rience conviviale de R et Python
 
-Jupyter vous donne des **bloc-notes** pour écrire votre code et faire des visualisations. 
-Vous pouvez rapidement itérer, visualiser et partager vos analyses. Puisque Jupyter est exécuté
-sur un serveur (que vous avez mis en place dans la dernière section), il vous permet d'effectuer 
-de très grandes analyses sur un matériel centralisé! Ajoutez autant de puissance qu’il vous faut! 
-Et puisque c’est dans le nuage, vous pouvez aussi le partager avec vos collègues.
+Jupyter vous donne des **bloc-notes** pour Ã©crire votre code et faire des visualisations. 
+Vous pouvez rapidement itÃ©rer, visualiser et partager vos analyses. Puisque Jupyter est exÃ©cutÃ©
+sur un serveur (que vous avez mis en place dans la derniÃ¨re section), il vous permet d'effectuer 
+de trÃ¨s grandes analyses sur un matÃ©riel centralisÃ©! Ajoutez autant de puissance quâ€™il vous faut! 
+Et puisque câ€™est dans le nuage, vous pouvez aussi le partager avec vos collÃ¨gues.
 
-### Explorez vos données
+### Explorez vos donnÃ©es
 
-Jupyter offre un certain nombre de fonctionnalités (et nous pouvons en ajouter d’autres)
+Jupyter offre un certain nombre de fonctionnalitÃ©s (et nous pouvons en ajouter dâ€™autres)
 
-- Éléments visuels intégrés dans votre bloc-notes
-- Volume de données pour le stockage de vos données
-- Possibilité de partager votre espace de travail avec vos collègues
+- Ã‰lÃ©ments visuels intÃ©grÃ©s dans votre bloc-notes
+- Volume de donnÃ©es pour le stockage de vos donnÃ©es
+- PossibilitÃ© de partager votre espace de travail avec vos collÃ¨gues
 
 ![gadgets logiciels interactifs](../images/jupyter_visual.png)
 
 
-### Environnement de développement dans le navigateur
+### Environnement de dÃ©veloppement dans le navigateur
 
-Créez pour explorer, et aussi pour écrire du code
+CrÃ©ez pour explorer, et aussi pour Ã©crire du code
 
-- Linting et débogage
-- Intégration Git
-- Terminal intégré
-- Thème clair/foncé (changer les paramètres en haut)
+- Linting et dÃ©bogage
+- IntÃ©gration Git
+- Terminal intÃ©grÃ©
+- ThÃ¨me clair/foncÃ© (changer les paramÃ¨tres en haut)
 
-![Fonctionnalités de l’environnement de développement](../images/jupyter_ide.png)
+![FonctionnalitÃ©s de lâ€™environnement de dÃ©veloppement](../images/jupyter_ide.png)
 
 **Plus de renseignements sur Jupyter [ici](https://jupyter.org)**
 
@@ -36,18 +36,18 @@ Créez pour explorer, et aussi pour écrire du code
 
 ## Commencez par les exemples
 
-Lorsque vous avez démarré votre serveur, il a été chargé de modèles de bloc-notes.
+Lorsque vous avez dÃ©marrÃ© votre serveur, il a Ã©tÃ© chargÃ© de modÃ¨les de bloc-notes.
 Parmi les bons blocs-notes pour commencer, il y a `R/01-R-Notebook-Demo.ipynb` et ceux dans
 dans `scikitlearn`. Les bloc-notes `pytorch` et `tensorflow` sont excellents si vous connaissez
-l’apprentissage automatique. `mapreduce-pipeline` et `ai-pipeline` sont plus avancés.
+lâ€™apprentissage automatique. `mapreduce-pipeline` et `ai-pipeline` sont plus avancÃ©s.
 
 ??? danger "Certains bloc-notes ne fonctionnent que dans certaines versions de serveur"
-    Par exemple, `gdal` ne fonctionne que dans l’image géomatique. Donc, si vous utilisez une autre
+    Par exemple, `gdal` ne fonctionne que dans lâ€™image gÃ©omatique. Donc, si vous utilisez une autre
     image, un bloc-notes utilisant `gdal` pourrait ne pas fonctionner.
     
 ## Ajout de logiciels
 
-Vous n’avez pas `sudo` dans Jupyter, mais vous pouvez utiliser 
+Vous nâ€™avez pas `sudo` dans Jupyter, mais vous pouvez utiliser 
 
 ```sh
 conda install --use-local your_package_name
@@ -60,32 +60,32 @@ pip install --user your_package_name
 ```
 
 
-**N’oubliez pas de redémarrer votre noyau Jupyter par la suite, pour accéder à de nouvelles trousses.**
+**Nâ€™oubliez pas de redÃ©marrer votre noyau Jupyter par la suite, pour accÃ©der Ã  de nouvelles trousses.**
 
-??? conseil "Assurez-vous de redémarrer le noyau Jupyter après l’installation d’un nouveau logiciel".
-    Si vous installez un logiciel dans un terminal, mais que votre noyau Jupyter était déjà
-    en cours d’exécution, il ne sera pas mis à jour.
+??? conseil "Assurez-vous de redÃ©marrer le noyau Jupyter aprÃ¨s lâ€™installation dâ€™un nouveau logiciel".
+    Si vous installez un logiciel dans un terminal, mais que votre noyau Jupyter Ã©tait dÃ©jÃ 
+    en cours dâ€™exÃ©cution, il ne sera pas mis Ã  jour.
     
 ??? conseil "Y a-t-il quelque chose que vous ne pouvez pas installer?"
-    Si vous avez besoin d’installer quelque chose, communiquez avec nous 
+    Si vous avez besoin dâ€™installer quelque chose, communiquez avec nous 
     ou [ouvrir une question GitHub](https://github.com/StatCan/kubeflow-containers).
-    Nous pouvons l’ajouter au logiciel par défaut.
+    Nous pouvons lâ€™ajouter au logiciel par dÃ©faut.
  
  
-# Entrer et sortir des données de Jupyter
+# Entrer et sortir des donnÃ©es de Jupyter
  
-Vous pouvez télécharger et charger des données vers ou depuis Jupyterhub directement dans le menu. 
+Vous pouvez tÃ©lÃ©charger et charger des donnÃ©es vers ou depuis Jupyterhub directement dans le menu. 
 Il y a un bouton de chargement en haut, et vous pouvez cliquer avec le bouton droit de la souris 
-sur la plupart des fichiers ou dossiers pour les télécharger.
+sur la plupart des fichiers ou dossiers pour les tÃ©lÃ©charger.
 
 
 
-## Stockage partagé en compartiment
+## Stockage partagÃ© en compartiment
 
-**L’autre option** est le stockage de gros volumes avec 
-[Stockage d’objets](https://en.wikipedia.org/wiki/Object_storage).
-Étant donné que le stockage est important pour les expérimentations, la diffusion 
-et l’exploration des ensembles de données, une section lui est consacré
+**Lâ€™autre option** est le stockage de gros volumes avec 
+[Stockage dâ€™objets](https://en.wikipedia.org/wiki/Object_storage).
+Ã‰tant donnÃ© que le stockage est important pour les expÃ©rimentations, la diffusion 
+et lâ€™exploration des ensembles de donnÃ©es, une section lui est consacrÃ©
 
 
 **Consultez la [section sur le stockage](/Stockage)**

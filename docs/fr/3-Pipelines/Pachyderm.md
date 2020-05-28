@@ -1,17 +1,17 @@
 # Pachyderm
 
  
-!!! conseil "Recherchez les anciens volumes en examinant l’option Existant"
-    Lorsque vous créez votre serveur, vous pouvez réutiliser un ancien volume 
-    ou en créer un nouveau. Vous souhaiterez probablement réutiliser votre ancien volume.
+!!! conseil "Recherchez les anciens volumes en examinant lâ€™option Existant"
+    Lorsque vous crÃ©ez votre serveur, vous pouvez rÃ©utiliser un ancien volume 
+    ou en crÃ©er un nouveau. Vous souhaiterez probablement rÃ©utiliser votre ancien volume.
 
 
-??? échec "Pourquoi est-ce que je reçois le message "Paramètre URL manquant : code"?"
-    Si vous essayez de vous connecter à Kubeflow et que vous obtenez le message 
-    > Paramètre URL manquant : code
+??? Ã©chec "Pourquoi est-ce que je reÃ§ois le message "ParamÃ¨tre URL manquant : code"?"
+    Si vous essayez de vous connecter Ã  Kubeflow et que vous obtenez le message 
+    > ParamÃ¨tre URL manquant : code
 
-    c’est parce que vous vous êtes connecté avec le mauvais compte Azure. 
-    Vous devez vous connecter avec vos justificatifs d’identité dans le nuage.
+    câ€™est parce que vous vous Ãªtes connectÃ© avec le mauvais compte Azure. 
+    Vous devez vous connecter avec vos justificatifs dâ€™identitÃ© dans le nuage.
 
-    ![Cela signifie que vous êtes dans le mauvais compte](../images/missing_parameter_code.png)
+    ![Cela signifie que vous Ãªtes dans le mauvais compte](../images/missing_parameter_code.png)
     
