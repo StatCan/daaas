@@ -10,7 +10,7 @@ run on compute provided via Kubernetes.
 In the context of the Advanced Analytics Workspace, Kubeflow Pipelines are
 interacted with through:
 
-- The Kubeflow [UI](../1-Experiments/Kubeflow.md), where from the Pipelines menu
+- The [Kubeflow UI](../1-Experiments/Kubeflow.md), where from the Pipelines menu
   you can upload pipelines, view the pipelines you have and their results, etc.
 - The Kubeflow Pipelines python
   [SDK](https://www.kubeflow.org/docs/pipelines/sdk/sdk-overview/), accessible
@@ -19,13 +19,16 @@ interacted with through:
   where you can define your components and pipelines, submit them to run now, or
   even save them for later.
 
-??? example "More examples in the notebooks" More comprehensive pipeline
-examples specifically made for this platform are available on
-[github](https://github.com/StatCan/jupyter-notebooks) (and in every Notebook
-Server at `/jupyter-notebooks`). You can also check out
-[public sources](https://github.com/kubeflow/pipelines/tree/master/samples).  
- See [here](https://www.kubeflow.org/docs/pipelines/overview/pipelines-overview/)
-for a more detailed general explanation of Kubeflow Pipelines.
+<!-- prettier-ignore -->
+??? example "More examples in the notebooks"
+    More comprehensive pipeline examples specifically made for this platform are
+    available on [GitHub](https://github.com/StatCan/jupyter-notebooks) (and in
+    every Notebook Server at `/jupyter-notebooks`). You can also check out
+    [public sources](https://github.com/kubeflow/pipelines/tree/master/samples).
+
+See
+[the official Kubeflow docs](https://www.kubeflow.org/docs/pipelines/overview/pipelines-overview/)
+for a more detailed explanation of Kubeflow Pipelines.
 
 ![A Kubeflow Pipeline](../images/kf-pipeline_with_result.png)
 
@@ -45,7 +48,7 @@ model). Each _component_ should be **modular**, and ideally **reusable**.
 
 At their core, each _component_ has:
 
-- a standalone application, packaged as a
+- A standalone application, packaged as a
   [docker images](https://docs.docker.com/get-started/), for doing the actual
   work. The code in the docker image could be a shell script, python script, or
   anything else you can run from a Linux terminal
@@ -56,10 +59,11 @@ At their core, each _component_ has:
 A _pipeline_ then, using the above _components_, defines the logic for how
 _components_ are connected, such as:
 
-1.  run ComponentA
-1.  pass the output from ComponentA to ComponentB and ComponentC
-1.  ...
+1. run ComponentA
+2. pass the output from ComponentA to ComponentB and ComponentC
+3. ...
 
+<!-- prettier-ignore -->
 !!! example "Example of a pipeline" Here's an example
 
         #!/bin/python3
@@ -94,8 +98,8 @@ using the python SDK.
 The objective of our pipeline is, given five numbers, compute:
 
 1. The average of the first three numbers
-1. The average of the last two numbers
-1. The average of the results of (1) and (2)
+2. The average of the last two numbers
+3. The average of the results of (1) and (2)
 
 To do this, we define a _pipeline_ that uses our average _component_ to do the
 computations.
@@ -114,15 +118,15 @@ it, and what outputs to pull from the container. To actually use these
 ContainerOp's in our pipeline, we build factory functions like `average_op` (as
 we'll probably want more than just one average _component_).
 
-```
+```python
 from kfp import dsl
 
 def average_op(*numbers):
     """
     Factory for average ContainerOps
 
-    Accepts an arbitrary number of input numbers, returning a ContainerOp that passes those
-    numbers to the underlying docker image for averaging
+    Accepts an arbitrary number of input numbers, returning a ContainerOp that
+    passes those numbers to the underlying docker image for averaging
 
     Returns output collected from ./out.txt from inside the container
 
@@ -146,13 +150,14 @@ factories, decorated by the @dsl.pipeline decorator. Our pipeline uses our
 _average_ component by passing it numbers, and we use the _average_ results by
 passing them to later functions through accessing `avg_*.output`.
 
-```
+```python
 @dsl.pipeline(
     name="my pipeline's name"
 )
 def my_pipeline(a, b, c, d, e):
     """
-    Averaging pipeline which accepts five numbers and does some averaging operations on them
+    Averaging pipeline which accepts five numbers and does some averaging
+    operations on them
     """
     # Compute averages for two groups
     avg_1 = average_op(a, b, c)
@@ -166,7 +171,7 @@ And finally, we save a YAML definition of our pipeline for later passing to
 Kubeflow Pipelines. This YAML describes to Kubeflow Pipelines exactly how to run
 our pipeline - unzip it and take a look yourself!
 
-```
+```python
 from kfp import compiler
 pipeline_yaml = 'pipeline.yaml.zip'
 compiler.Compiler().compile(
@@ -176,18 +181,20 @@ compiler.Compiler().compile(
 print(f"Exported pipeline definition to {pipeline_yaml}")
 ```
 
-??? warning "Kubeflow Pipelines is a lazy beast" It is useful to keep in mind
-what computation is happening when you run this python code versus what happens
-when you submit the pipeline to Kubeflow Pipelines. Although it seems like
-everything is happening in the moment, try adding `print(avg_1.output)` to the
-above pipeline and see what happens when you compile your pipeline. The python
-SDK we're using is for **authoring** pipelines, not for running them, so results
-from components will never be available when you run this python code. The is
-discussed more below in **# Understanding what computation occurs when**.
+<!-- prettier-ignore -->
+??? warning "Kubeflow Pipelines is a lazy beast"
+    It is useful to keep in mind what computation is happening when you run this
+    python code versus what happens when you submit the pipeline to Kubeflow
+    Pipelines. Although it seems like everything is happening in the moment, try
+    adding `print(avg_1.output)` to the above pipeline and see what happens when
+    you compile your pipeline. The python SDK we're using is for _authoring_
+    pipelines, not for running them, so results from components will never be
+    available when you run this python code. The is discussed more below in
+    _Understanding what computation occurs when_.
 
 To actually run our pipeline, we define an experiment:
 
-```
+```python
 experiment_name = "averaging-pipeline"
 
 import kfp
@@ -204,14 +211,14 @@ pl_params = {
 
 ```
 
-Which is observable in the Kubeflow Pipelines
-[UI](../1-Experiments/Kubeflow.md):
+Which is observable in the
+[Kubeflow Pipelines UI](../1-Experiments/Kubeflow.md):
 
 ![Kubeflow Pipeline Experiment](../images/kfp_experiment.png)
 
 And then run an instance of our pipeline with the arguments we want:
 
-```
+```python
 import time
 
 run = client.run_pipeline(

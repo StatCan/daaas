@@ -45,13 +45,12 @@ We have four available types of bucket storage.
 
 **Self-Serve:**
 
-| storage type                                                        | description                                                                 |
-|:--------------------------------------------------------------------|:----------------------------------------------------------------------------|
-| [Minimal](https://minimal-tenant1-minio.covid.cloud.statcan.ca)     | By default, use this one. It is HDD backed storage.                         |
+| storage type                                                        | description                                                                                        |
+| :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
+| [Minimal](https://minimal-tenant1-minio.covid.cloud.statcan.ca)     | By default, use this one. It is HDD backed storage.                                                |
 | [Premium](https://premium-tenant1-minio.covid.cloud.statcan.ca)     | Use this if you need very high read/write speeds, like for training models on very large datasets. |
-| [Pachyderm](https://pachyderm-tenant1-minio.covid.cloud.statcan.ca) | You will only need this if you're using Pachyderm Pipelines.                |
+| [Pachyderm](https://pachyderm-tenant1-minio.covid.cloud.statcan.ca) | You will only need this if you're using Pachyderm Pipelines.                                       |
 
- 
 **Publicly Available:**
 
 - [Public (Read-Only)](https://datasets.covid.cloud.statcan.ca)
@@ -68,10 +67,13 @@ format `firstname-lastname`.
 
 ![Minio browser with personal bucket using first name, last name format (hyphenated)](images/minio_self_serve_bucket.png)
 
+<!-- prettier-ignore -->
 !!! failure "Cannot yet share files from Minio with OpenID"
-    Due to [an upstream bug in Minio](https://github.com/minio/minio/issues/8935) you cannot share files yet. 
-    This will hopefully be resolved soon. In the meantime, it **does** work if you use your access key and secret key,
-    which you can get from Kubeflow.
+    Due to
+    [an upstream bug in Minio](https://github.com/minio/minio/issues/8935) you
+    cannot share files yet. This will hopefully be resolved soon. In the
+    meantime, it **does** work if you use your access key and secret key, which
+    you can get from Kubeflow.
 
 ## Sharing
 
@@ -89,7 +91,10 @@ the command line tool `mc`, or via S3 API calls in R or Python.
 
 <!-- prettier-ignore -->
 !!! danger "Required Kubeflow configuration"
-    If you want to enable bucket storage for your notebook, select "Inject credentials to access MinIO object storage" from the **Configurations** menu when you create your server. Otherwise, your server won't know how to sign-in to your personal storage.
+    If you want to enable bucket storage for your notebook, select "Inject
+    credentials to access MinIO object storage" from the **Configurations** menu
+    when you create your server. Otherwise, your server won't know how to
+    sign-in to your personal storage.
     ![Kubeflow notebook server creation with "Inject credentials to access MinIO object storage" option selected](images/kubeflow_minio_option.png)
 
 <!-- prettier-ignore -->

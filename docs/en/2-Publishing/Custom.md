@@ -5,12 +5,11 @@ container. For instance, NodeJS apps, Flask or Dash apps. Etc.
 
 ![Example of a NodeJS App](../images/readme/covid_ui.png)
 
-
-!!! example "See the source code for this app"
-    We just push these kinds of applications through Github into the server.
-    The source for the above app is here [github.com/StatCan/covid19](https://github.com/StatCan/covid19)
-
-
+<!-- prettier-ignore -->
+!!! info "See the source code for this app"
+    We just push these kinds of applications through Github into the server. The
+    source for the above app is
+    [github.com/StatCan/covid19](https://github.com/StatCan/covid19)
 
 # How to get your app hosted
 
@@ -20,4 +19,3 @@ and point a url to it. To update it, you'll just interact with the Statcan
 Github repository with Pull Requests.
 
 **Contact us if you have questions.**
-
