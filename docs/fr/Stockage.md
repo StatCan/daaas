@@ -77,11 +77,12 @@ compartiment personnel selon le format `prenom-nom`. Voir la photo ci-dessous.
 
 ![Compartiments/Stockage d'objets](images/minio_self_serve_bucket.png)
 
-!!! failure "Cannot yet share files from Minio with OpenID" Due to
-[an upstream bug in Minio](https://github.com/minio/minio/issues/8935) you
-cannot share files yet. This will hopefully be resolved soon. In the meantime,
-it **does** work if you use your access key and secret key, which you can get
-from Kubeflow.
+!!! échec "Impossible pour l'instant de partager des fichiers de MinIO avec
+OpenID" En raison
+d'[un bogue en amont dans MinIO](https://github.com/minio/minio/issues/8935),
+vous ne pouvez pas encore partager des fichiers. Nous espérons que le problème
+sera bientôt réglé. En attendant, cela **fonctionne** si vous utilisez votre clé
+d’accès et votre clé secrète, que vous pouvez obtenir à partir de Kubeflow.
 
 ## Partage
 
