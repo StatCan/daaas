@@ -17,7 +17,7 @@ votre équipe.
 ## Se connecter à Kubeflow
 
 - Connectez-vous au [portail Azure](https://portal.azure.com) **à l'aide de vos
-  justificatifs d'identité cloud.statcan**.
+  justificatifs d'identité `@cloud.statcan.ca`**.
 
 <!-- prettier-ignore -->
 ??? warning "Connectez-vous au portail Azure au moyen de vos justificatifs d'identité dans le nuage"
@@ -27,10 +27,10 @@ votre équipe.
     ![Portail Azure : choisissez l'adresse `@cloud.statcan.ca`](../images/azure-login.png)
 
 - Après avoir ouvert une session dans Azure, connectez-vous à
-  [kubeflow](https://kubeflow.covid.cloud.statcan.ca)
+  [Kubeflow](https://kubeflow.covid.cloud.statcan.ca)
 
 <!-- prettier-ignore -->
-??? failure "Pourquoi est-ce que je reçois le message "Paramètre URL manquant : code"?"
+??? failure « Pourquoi est-ce que je reçois le message `Paramètre URL manquant : code`? »
     Si vous essayez de vous connecter à Kubeflow et que vous obtenez le message
 
     > Paramètre URL manquant : code
@@ -65,11 +65,11 @@ votre équipe.
 ## Unité centrale (CPU) et mémoire vive
 
 - Au moment de la rédaction du présent document (21 avril 2020), il y a deux
-  types d'ordinateurs dans la grappe
+  types d'ordinateurs dans la grappe :
 
-  - **CPU :** D16s v3 `(16 unites centrales virtuelles, memoire vive de 64 Go)`
-  - **GPU :** NC6s_v3
-    `(6 unites centrales virtuelles, memoire vive de 112 Go, 1 cartes graphiques)`
+  - **CPU :** `D16s_v3` (16 unités centrales virtuelles, mémoire vive de 64 Go)
+  - **GPU :** `NC6s_v3` (6 unités centrales virtuelles, mémoire vive de 112 Go,
+    1 carte graphiques)
 
   Pour cette raison, si vous demandez trop de mémoire vive ou trop de CPU, il
   pourrait être difficile ou impossible de satisfaire votre demande.
@@ -93,7 +93,7 @@ votre équipe.
 ![Créer un volume de données](../images/kubeflow_volumes.png)
 
 <!-- prettier-ignore -->
-!!! tip "Trouvez des anciens volumes en jetant un coup l'oeil à l'option Existant"
+!!! tip "Trouvez des anciens volumes en jetant un coup d'œil à l'option Existant"
     Lorsque vous créez votre serveur, vous avez la possibilité de réutiliser un
     ancien volume ou d'en créer un nouveau. Vous souhaiterez probablement
     réutiliser votre ancien volume.
@@ -106,7 +106,7 @@ votre équipe.
   temps.)
 
 <!-- prettier-ignore -->
-!!! success "Votre serveur est en fonctionnement" 
+!!! success "Votre serveur est en fonctionnement"
     Si tout va bien, votre serveur devrait fonctionner! Vous aurez désormais
     la possibilité de connecter et [d'essayer Jupyter.](/1-Experiences/Jupyter)
 
@@ -122,7 +122,7 @@ espace de noms d'équipe**.
 
 Le lien pour créer un nouvel espace de noms est ici :
 
-- à FAIRE, IL N'Y A PAS ENCORE DE LIEN.
+- à FAIRE, IL N'Y A PAS ENCORE DE LIEN. <!-- TODO -->
 
 ## Gérer les contributeurs
 
@@ -135,5 +135,5 @@ possédez à partir du menu **Gérer les contributeurs** dans Kubeflow.
 !!! success "Vos collègues et vous pouvez maintenant partager l'accès à un serveur!"
     Vous pouvez maintenant partager un serveur avec vos collègues! Essayez-le!
 
-**For more details on collaboration on the platform, see
+**Pour plus de détails sur la collaboration avec le plateforme, voyez
 [Collaboration](/Collaboration).**

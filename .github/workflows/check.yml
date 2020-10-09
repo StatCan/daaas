@@ -1,0 +1,39 @@
+name: Check
+on: push
+jobs:
+  formatting:
+    name: Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - name: Install dependencies
+        run: make install-yarn
+      - name: Formatting
+        run: make check-format
+  spelling-en:
+    name: Spelling (en)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - name: Install dependencies
+        run: make install-yarn
+      - name: Spelling (en)
+        run: make check-spelling-en
+  spelling-fr:
+    name: Spelling (fr)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - name: Install dependencies
+        run: make install-yarn
+      - name: Spelling (fr)
+        run: make check-spelling-fr

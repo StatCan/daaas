@@ -15,24 +15,24 @@ for your team.
 
 ## Log into Kubeflow
 
-- Log into [the azure portal](https://portal.azure.com) **using your
-  cloud.statcan credentials**.
+- Log into [the Azure portal](https://portal.azure.com) **using your
+  `cloud.statcan.ca` credentials**.
 
 <!-- prettier-ignore -->
 ??? warning "Log into the Azure Portal using your Cloud Credentials"
-    You have to login to the azure portal **using your statcan credentials**.
+    You have to login to the azure portal **using your StatCan credentials**.
     `first.lastname@cloud.statcan.ca`. You can do that using
-    [the azure portal](https://portal.azure.com).
+    [the Azure portal](https://portal.azure.com).
     ![Azure Portal: Choose the `@cloud.statcan.ca` address](../images/azure-login.png)
 
 - After logging into Azure, log into
-  [kubeflow](https://kubeflow.covid.cloud.statcan.ca)
+  [Kubeflow](https://kubeflow.covid.cloud.statcan.ca)
 
 <!-- prettier-ignore -->
-??? failure "Why am I getting "Missing url parameter: code"?"
-    If you try to log into kubeflow and you get the message:
+??? failure "Why am I getting `Missing url parameter: code`?"
+    If you try to log into Kubeflow and you get the message:
 
-    > Missing url parameter: code
+    > `Missing url parameter: code`
 
     It is because you are signed in with the wrong Azure account. You must sign
     in with your cloud credentials.
@@ -48,7 +48,7 @@ for your team.
 ## Configuring your server
 
 - You will get a template to create your notebook server. **Note:** the name
-  must be lowercase letters with hypens. **No spaces, and no underscores.**
+  must be lowercase letters with hyphens. **No spaces, and no underscores.**
 
 - **You'll need to choose an image** You will probably want one of
 
@@ -58,15 +58,15 @@ for your team.
 
 ![Choose an Image](../images/kubeflow_choose_an_image.png)
 
-- If you want to use a gpu, check if the image says **cpu** or **gpu**.
+- If you want to use a GPU, check if the image says `cpu` or `gpu`.
 
 ## CPU and Memory
 
 - At the time of writing (April 21, 2020) there are two types of computers in
   the cluster
 
-  - **CPU:** D16s v3 `(16 vcpus, 64 GiB memory)`
-  - **GPU:** NC6s_v3 `(6 vcpus, 112 GiB memory, ? GPUs)`
+  - **CPU:** `D16s v3` (16 CPU cores, 64 GiB memory)
+  - **GPU:** `NC6s_v3` (6 CPU cores, 112 GiB memory, 1 GPU)
 
   Because of this, if you request too much RAM or too many CPUs, it may be hard
   or impossible to satisfy your request.
@@ -105,18 +105,18 @@ for your team.
 
 # Share your workspace
 
-In kubeflow every user has a **namespace**. Your namespace belongs to you, and
+In Kubeflow every user has a **namespace**. Your namespace belongs to you, and
 it's where all your resources live. If you want to collaborate with someone you
 need to share a namespace. So you can do that either by sharing your own
 namespace, or more preferably, **by creating a team namespace**.
 
 The link to create a new namespace is in the **&#8942;** menu on
-[the kubeflow section of the portal](https://portal.covid.cloud.statcan.ca/#kubeflow).
+[the Kubeflow section of the portal](https://portal.covid.cloud.statcan.ca/#kubeflow).
 
 ## Manage contributors
 
 You can add or remove people from a namespace you already own through the
-**Manage Contributors** menu in kubeflow.
+**Manage Contributors** menu in Kubeflow.
 
 ![Contributors Menu](../images/kubeflow_contributors.png)
 

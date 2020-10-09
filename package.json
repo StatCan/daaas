@@ -1,0 +1,20 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StatCan/daaas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StatCan/daaas/issues"
+  },
+  "homepage": "https://statcan.github.io/daaas/",
+  "husky": {
+    "hooks": {
+      "pre-commit": "make test"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "markdown-spellcheck": "git://github.com/brendangadd/node-markdown-spellcheck.git#45cf81bfb56f298d0928461133aa9f264047dd49",
+    "prettier": "^2.0.5"
+  }
+}

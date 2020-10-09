@@ -31,6 +31,7 @@ markdown_extensions:
   - attr_list
   - admonition
   - codehilite
+  - mdx_truly_sane_lists
   - pymdownx.details
 
 extra:
@@ -44,18 +45,17 @@ extra:
 nav:
   - Démarrage: index.md
   - Analyse:
-    - Kubeflow: 1-Experiences/Kubeflow.md
-    - Jupyter: 1-Experiences/Jupyter.md
-    - ML-Workspaces: 1-Experiences/ML-Workspaces.md
-    - DataBricks: 1-Experiences/Databricks.md
-    - MLflow: 1-Experiences/MLflow.md
+      - Kubeflow: 1-Experiences/Kubeflow.md
+      - Jupyter: 1-Experiences/Jupyter.md
+      - ML-Workspaces: 1-Experiences/Bureau-virtuel.md
+      - DataBricks: 1-Experiences/Databricks.md
+      - MLflow: 1-Experiences/MLflow.md
   - Publication:
-    - R Shiny: 2-Publication/R-Shiny.md
-    - PowerBI: 2-Publishing/PowerBI.md
-    - Sur mesure: 2-Publication/Sur-mesure.md
+      - R Shiny: 2-Publication/R-Shiny.md
+      - Power BI: 2-Publication/PowerBI.md
+      - Sur mesure: 2-Publication/Sur-mesure.md
   - Pipelines:
-    - Kubeflow Pipelines: 3-Pipelines/Kubeflow-Pipelines.md
-    - Pachyderm: 3-Pipelines/Pachyderm.md
+      - Kubeflow Pipelines: 3-Pipelines/Kubeflow-Pipelines.md
   - Collaboration: Collaboration.md
   - Stockage: Stockage.md
   - Aide/Contactez-nous: Aide.md

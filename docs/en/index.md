@@ -49,7 +49,7 @@ We have an R-Shiny server for hosting R-Shiny apps
 
 ![R Shiny Server](images/readme/shiny_ui.png)
 
-To create any an R-Shiny Dashboard, you just have to submit a Github Pull
+To create any an R-Shiny Dashboard, you just have to submit a GitHub pull
 request to our
 [R-Dashboards GitHub repository](https://github.com/StatCan/R-dashboards).
 
@@ -78,7 +78,7 @@ If an experiment turns into a product, then one of the following may be needed:
   for wider release.
 
 We will give an overview of the technologies here, and in the next sections
-there will be a more in-depth FAQ of each of them.
+there will be a more in-depth description of each of them.
 
 <!-- prettier-ignore -->
 !!! example "Browse some datasets"

@@ -78,10 +78,10 @@ Les équipes ont deux options (mais vous pouvez combiner les deux) :
 ## Partager un espace de travail dans Kubeflow
 
 Le partage dans Kubeflow présente l'avantage suivant : il est à structure libre
-et il fonctionne mieux pour les fichiers `.ipynb` (blocs-notes
-IPython/blocs-notes Jupyter). Cette méthode vous permet également de partager un
-environnement de calcul, de sorte que vous pouvez partager des ressources très
-facilement. Lorsque vous partagez un espace de travail, vous partagez :
+et il fonctionne mieux pour les fichiers `.ipynb` (blocs-notes Jupyter). Cette
+méthode vous permet également de partager un environnement de calcul, de sorte
+que vous pouvez partager des ressources très facilement. Lorsque vous partagez
+un espace de travail, vous partagez :
 
 – un compartiment privé et partagé (`/team-name` et `/shared/team-name`); – tous
 les serveurs de blocs-notes dans l'espace de nommage Kubeflow.

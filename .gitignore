@@ -1,3 +1,6 @@
-site
 .theme
 .venv
+node_modules
+package-lock.json
+site
+yarn-error.log

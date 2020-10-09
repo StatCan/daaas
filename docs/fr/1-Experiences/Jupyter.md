@@ -77,7 +77,7 @@ de nouvelles trousses.**
 
 # Entrer et sortir des données de Jupyter
 
-Vous pouvez télécharger et charger des données vers ou depuis Jupyterhub
+Vous pouvez télécharger et charger des données vers ou depuis JupyterHub
 directement dans le menu. Il y a un bouton de chargement en haut, et vous pouvez
 cliquer avec le bouton droit de la souris sur la plupart des fichiers ou
 dossiers pour les télécharger.

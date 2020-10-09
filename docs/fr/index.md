@@ -42,10 +42,10 @@ typiques, directement dans votre navigateur.
 
 # Pour la diffusion
 
-## R Shiny
+## R-Shiny
 
 <!-- prettier-ignore -->
-![R Shiny](images/logo-RStudio.png){:style="max-height:100px; display : block; margin-left : auto; margin-right : auto;"}
+![R-Shiny](images/logo-RStudio.png){:style="max-height:100px; display : block; margin-left : auto; margin-right : auto;"}
 
 La plateforme est conçue pour accueillir le type d'application à source ouverte
 de votre choix. Nous disposons d'un serveur R-Shiny pour l'hébergement des
@@ -54,7 +54,7 @@ applications R-Shiny
 ![Serveur R-Shiny](images/readme/shiny_ui.png)
 
 Pour créer un tableau de bord R-Shiny, il suffit de soumettre une demande
-d'extraction (« pull request ») GitHub à notre
+d'extraction GitHub à notre
 [répertoire R-Dashboards GitHub](https://github.com/StatCan/R-dashboards).
 
 # Pour la production
@@ -62,7 +62,7 @@ d'extraction (« pull request ») GitHub à notre
 Si une expérimentation se transforme en produit, l'un des éléments suivants peut
 être nécessaire :
 
-- des pipelines Kubeflow pour les travaux à haut volume ou uhaute intensité
+- des pipelines Kubeflow pour les travaux à haut volume ou haute intensité
 - des pipelines d'automatisation
 
 ![Pipelines Kubeflow](images/readme/kubeflow_pipeline.png)
@@ -80,12 +80,11 @@ Si une expérimentation se transforme en produit, l'un des éléments suivants p
 
 - Chaque espace de travail peut être équipé de son propre stockage.
 
-- Il existe également des compartiments ("buckets") de stockage pour la
-  publication d'ensembles de données, pour usage interne ou diffusion plus
-  large.
+- Il existe également des compartiments de stockage pour la publication
+  d'ensembles de données, pour usage interne ou diffusion plus large.
 
 Nous donnerons un aperçu des technologies ici. Des renseignements plus précis
-sur chacune d'entre elles seront fouris dans les sections suivantes.
+sur chacune d'entre elles seront fournis dans les sections suivantes.
 
 <!-- prettier-ignore -->
 !!! example "Parcourir quelques ensembles de données"

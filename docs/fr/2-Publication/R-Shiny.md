@@ -14,16 +14,15 @@ Placez votre répertoire dans un dossier portant le nom que vous voulez utiliser
 
 Si vous avez d'autres bibliothèques R à installer, envoyez votre liste à
 [répertoire R-Shiny](https://github.com/StatCan/shiny) en créant un dossier
-Github, et nous ajouterons les dépendances.
+GitHub, et nous ajouterons les dépendances.
 
 ![Modèle de tableau de bord](../images/example_shiny_dashboard.png)
 
 <!-- prettier-ignore -->
 !!! example "Voir le tableau de bord ci-dessus"
-    Le tableau de bord ci-dessus se trouve dans Github. Jetez un coup d'oeil à
+    Le tableau de bord ci-dessus se trouve dans GitHub. Jetez un coup d'œil à
     [la source](https://github.com/StatCan/R-dashboards/tree/master/bus-dashboard)
-    et voyez le tableau de bord en direct
-    [shiny.covid.cloud.statcan.ca/bus-dashboard](https://shiny.covid.cloud.statcan.ca/bus-dashboard).
+    et [voyez le tableau de bord en direct](https://shiny.covid.cloud.statcan.ca/bus-dashboard).
 
 # Intégration de tableaux de bord sur vos sites Web
 

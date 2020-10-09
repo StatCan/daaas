@@ -3,7 +3,7 @@
 ## Friendly R and Python experience
 
 Jupyter gives you **notebooks** to write your code and make visualizations. You
-can quickly iterate, visualize, and sahre your analyses. Because it's running on
+can quickly iterate, visualize, and share your analyses. Because it's running on
 a server (that you set up in the last section) you can do really big analyses on
 centralized hardware! Adding as much horsepower as you need! And because it's on
 the cloud, you can share it with your colleagues too.
@@ -41,7 +41,7 @@ machine learning. The `mapreduce-pipeline` and `ai-pipeline` are more advanced.
 <!-- prettier-ignore -->
 ??? danger "Some notebooks only work in certain server versions"
     For instance, `gdal` is only in the geomatics image. So if you use another
-    image then a notebook using gdal might not work.
+    image then a notebook using `gdal` might not work.
 
 ## Adding software
 
@@ -57,12 +57,12 @@ or
 pip install --user your_package_name
 ```
 
-**Don't forget to restart your jupyter kernel afterwards, to make new packages
+**Don't forget to restart your Jupyter kernel afterwards, to make new packages
 available.**
 
 <!-- prettier-ignore -->
 ??? tip "Make sure to restart the Jupyter kernel after installing new software"
-    If you install software in a terminal, but your jupyter kernel was already
+    If you install software in a terminal, but your Jupyter kernel was already
     running, then it will not be updated.
 
 <!-- prettier-ignore -->
@@ -73,7 +73,7 @@ available.**
 
 # Getting Data in and out of Jupyter
 
-You can upload and download data to/from Jupyterhub directly in the menu. There
+You can upload and download data to/from JupyterHub directly in the menu. There
 is an upload button at the top, and you can right-click most files or folders to
 download them.
 
