@@ -1,3 +1,13 @@
+
+!!! failure "Internet Explorer (IE) is not supported"
+    Internet Explorer will not work with Kubeflow or MinIO; you will have to use
+    Microsoft Edge (which is based on Chromium) or one of the standard browsers such
+    as Firefox or Chrome.
+
+!!! warning "Limited support for Safari browser"
+    We have encountered some issues with Safari when using Kubeflow and MinIO, so we
+    recommend using using another browser (such as Firefox or Chrome) if possible.
+
 # Starting on the Advanced Analytics Workspace
 
 ![Advanced Analytics Workspace homepage](images/readme/portal_ui.png)
@@ -15,6 +25,7 @@ We'll break down the standard tasks into three categories:
 
 All are important, and we will address all of them, but we'll focus on the first
 two as these are most widely applicable.
+
 
 # For Experiments
 
