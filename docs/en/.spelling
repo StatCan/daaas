@@ -32,13 +32,3 @@ visualize
 woohoo
 workspace
 workspaces
-SQLAlchemy
-Flask-SQLAlchemy
-http
-dataset
-datasette
-SQLite3
-app.py
-list_employees.html
-add.html
-start.sh

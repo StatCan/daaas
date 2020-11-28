@@ -49,8 +49,6 @@ nav:
       - MLflow: 1-Experiments/MLflow.md
   - Publishing:
       - R Shiny: 2-Publishing/R-Shiny.md
-      - Dash: 2-Publishing/Dash.md
-      - Datasette: 2-Publishing/Datasette.md
       - Power BI: 2-Publishing/PowerBI.md
       - Custom: 2-Publishing/Custom.md
   - Pipelines:

@@ -6,9 +6,6 @@ COVID-19
 Customization
 customize
 Databricks
-datasette
-Datasette
-datasettes
 Dockerfile
 dropdown
 e.g.
@@ -19,7 +16,6 @@ Github
 GitHub
 GitLab
 integrations
-javascript
 jupyter
 JupyterHub
 JupyterLab
@@ -53,12 +49,9 @@ R-Shiny
 RStudio
 Seldon
 Serverless
-shapefiles
-Shiny
 Shiny
 Sign
 Slack
-sqlite
 StatCan
 Vault
-with
+with 
