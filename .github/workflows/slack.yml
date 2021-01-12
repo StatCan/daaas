@@ -1,0 +1,25 @@
+name: Slack
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'CHANGELOG.md'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .github/scripts/slack/requirements.txt
+      - name: Run
+        run: |
+          python3 .github/scripts/slack/slack-notification.py
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

@@ -76,7 +76,7 @@ Features / Updates:
   - Updated to Docker Bits hierarchical structure
 - Update Visual Studio code-server to [v3.8.0](https://github.com/cdr/code-server/releases/tag/v3.8.0)
   - Added default extensions Python and R
-  - Revert to Dark theme
+  - Revert to Dark Theme
 
 > **Note**: N/A
 
