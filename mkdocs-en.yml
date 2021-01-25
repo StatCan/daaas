@@ -47,6 +47,7 @@ nav:
       - RStudio: 1-Experiments/RStudio.md
       - Remote Desktop: 1-Experiments/Remote-Desktop.md
       - MLflow: 1-Experiments/MLflow.md
+      - Distributed Training: 1-Experiments/Distributed-Training.md
   - Publishing:
       - R Shiny: 2-Publishing/R-Shiny.md
       - Dash: 2-Publishing/Dash.md
