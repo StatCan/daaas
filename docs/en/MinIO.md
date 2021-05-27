@@ -5,7 +5,7 @@ MinIO is a cloud-native scalable object store. We use MinIO for buckets (blob or
 - Accessible by multiple consumers at once - You can access the same data source from multiple Notebook Servers and pipelines at the same time without needing to duplicate the data.
 - Sharing - You can share files from a bucket by sharing a URL that you can get through a simple web interface. This is great for sharing data with people outside of your workspace.
 
-# Getting Started
+# Setup
 ## MinIO Mounted Folders on a Notebook Server
 All Notebook Servers have your MinIO storage mounted as directories by default. The MinIO storage is located in `~/minio`:
 
