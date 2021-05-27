@@ -13,6 +13,7 @@ talking about here.
 [![Publishing](images/Publishing.PNG)](#publishing)
 [![Pipelines](images/Pipelines.PNG)](#pipelines)
 [![Collaboration](images/Collaboration.PNG)](#collaboration)
+[![Storage](images/Storage.PNG)](#storage)
 
 # Get Started with AAW
 
@@ -109,17 +110,26 @@ share code, or request a **[shared workspace](/Collaboration/)** .
     production oriented use cases, and we can probably save you lots of time.
     Don't be shy to [ask us for help](Help)!
 
-# How do I get data? How do I submit data?
+# Storage
+The platform provides several types of storage:
+
+- Disk (also called Volumes on the Notebook Server creation screen)
+- Bucket ("Blob" or S3 storage, provided through MinIO)
+- Data Lakes (coming soon)
+
+Depending on your use case, either disk or bucket may be most suitable:
+
+|   Type |                                                       Simultaneous Users |                                                   Speed | Total size               | Sharable with Other Users            |
+| -----: | -----------------------------------------------------------------------: | ------------------------------------------------------: | ------------------------ | ------------------------------------ |
+|   Disk |                                    One machine/notebook server at a time |                        Fastest (throughput and latency) | <=512GB total per drive  | No                                   |
+| Bucket | Simultaneous access from many machines/notebook servers at the same time | Fast-ish (Fast download, modest upload, modest latency) | Infinite (within reason) | [Yes](#sharing-from-private-buckets) |
+
+<!-- prettier-ignore -->
+??? info "If you're unsure which to choose, don't sweat it"
+    These are guidelines, not an exact science - pick what sounds best now and run with it.  The best choice for a complicated usage is non-obvious and often takes hands-on experience, so just trying something will help.  For most situations both options work well even if they're not perfect, and remember that data can always be copied later if you change your mind.
+
 
 ![Browse Datasets](images/readme/minio_ui.png)
-
-- Every workspace can be equipped with its own storage.
-
-- There are also storage buckets to publish datasets; either for internal use or
-  for wider release.
-
-We will give an overview of the technologies here, and in the next sections
-there will be a more in-depth description of each of them.
 
 <!-- prettier-ignore -->
 !!! example "Browse some datasets"
@@ -127,3 +137,12 @@ there will be a more in-depth description of each of them.
     data sets are meant to store widely shared data. Either data that has been
     brought it, or data to be released out as a product. **As always, ensure
     that the data is not sensitive.**
+    
+## Disks
+[![Disks](images/Disks.PNG)](/Storage/)
+**[Disks](/Storage/)** are added to your notebook server by adding Data Volumes.
+
+## Buckets
+[![MinIO](images/Buckets.PNG)](/MinIO/)
+**[MinIO](/MinIO/)** is a cloud-native scalable object store. We use it for buckets (blob or S3 storage).
+
