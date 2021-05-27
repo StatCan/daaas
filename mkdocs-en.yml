@@ -58,5 +58,7 @@ nav:
       - PaaS Integration: 3-Pipelines/PaaS.md
       - Model Serving: 3-Pipelines/Serving.md
   - Collaboration: Collaboration.md
-  - Storage: Storage.md
+  - Storage: 
+      - Disks: Storage.md
+      - MinIO: MinIO.md
   - Help/Contact: Help.md
