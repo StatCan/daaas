@@ -139,10 +139,10 @@ Depending on your use case, either disk or bucket may be most suitable:
     that the data is not sensitive.**
     
 ## Disks
-[![Disks](images/Disks.PNG)](/Storage/)
-**[Disks](/Storage/)** are added to your notebook server by adding Data Volumes.
+[![Disks](images/Disks.PNG)](Storage.md/)
+**[Disks](Storage.md/)** are added to your notebook server by adding Data Volumes.
 
 ## Buckets
-[![MinIO](images/Buckets.PNG)](/MinIO/)
-**[MinIO](/MinIO/)** is a cloud-native scalable object store. We use it for buckets (blob or S3 storage).
+[![MinIO](images/Buckets.PNG)](MinIO.md/)
+**[MinIO](MinIO.md/)** is a cloud-native scalable object store. We use it for buckets (blob or S3 storage).
 
