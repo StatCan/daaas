@@ -101,8 +101,8 @@ Databricks or AzureML.
 
 ## Share code among team members
 
-[![Share Code](images/ShareCode.PNG)](/Collaboration/) Use GitHub or GitLab to
-share code, or request a **[shared workspace](/Collaboration/)** .
+[![Share Code](images/ShareCode.PNG)](Collaboration.md/) Use GitHub or GitLab to
+share code, or request a **[shared workspace](Collaboration.md/)** .
 
 <!-- prettier-ignore -->
 !!! tip "Ask for help in production"
