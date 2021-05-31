@@ -121,7 +121,7 @@ can share the scope of who you're sharing with **No one** vs. **My Team** vs.
 The way that **Private** vs. **Team** based access is configured is with
 **namespaces**. 
 
-[![Share Code](images/ShareCode.PNG)](Collaboration.md/) Use GitHub or GitLab to
+![Share Code](images/ShareCode.PNG) Use GitHub or GitLab to
 share code.
 The advantage of sharing with git is that it works with users across namespaces,
 and keeping code in git is a great way to manage large software projects.
@@ -135,7 +135,7 @@ and keeping code in git is a great way to manage large software projects.
 ## Share a workspace in Kubeflow
 
 
-[![Shared Namespace](images/SharedNamespaces.PNG)](Collaboration.md/)You can also request a **[shared workspace](Collaboration.md/)**. 
+[![Shared Namespaces](images/SharedNamespaces.PNG)](Collaboration.md/)You can also request a **[shared workspace](Collaboration.md/)**. 
 
 The advantage of sharing inside Kubeflow is that it's more free-form and it
 works better for `.ipynb` files (Jupyter notebooks). This method also lets you
