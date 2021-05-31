@@ -99,16 +99,68 @@ Databricks or AzureML.
 
 # Collaboration
 
+There are lots of ways to collaborate on the platform, and what's best for you
+depends on what you're sharing and how many people you want to share with.
+We can roughly break the shareable things into **Data** and **Code**, and we
+can share the scope of who you're sharing with **No one** vs. **My Team** vs.
+**Everyone**. This leads to the following table of options
+
+|          |           **Private**            |           **Team**           |  **StatCan**  |
+| :------: | :------------------------------: | :--------------------------: | :-----------: |
+| **Code** | GitLab/GitHub or personal folder | GitLab/GitHub or team folder | GitLab/GitHub |
+| **Data** |    Personal folder or bucket     |    Team folder or bucket     | Shared Bucket |
+
+<!-- prettier-ignore -->
+??? question "What is the difference between a bucket and a folder?"
+    Buckets are like Network Storage. See the [Storage section](./Storage.md)
+    section for more discussion of the differences between these two ideas.
+
+
 ## Share code among team members
 
+The way that **Private** vs. **Team** based access is configured is with
+**namespaces**. 
+
 [![Share Code](images/ShareCode.PNG)](Collaboration.md/) Use GitHub or GitLab to
-share code, or request a **[shared workspace](Collaboration.md/)** .
+share code.
+The advantage of sharing with git is that it works with users across namespaces,
+and keeping code in git is a great way to manage large software projects.
+
+<!-- prettier-ignore -->
+!!! note "Don't forget to include a License!"
+    If your code is public, do not forget to keep with the Innovation Team's
+    guidelines and use a proper License if your work is done for Statistics
+    Canada.
+    
+## Share a workspace in Kubeflow
+
+
+[![Shared Namespace](images/SharedNamespaces.PNG)](Collaboration.md/)You can also request a **[shared workspace](Collaboration.md/)**. 
+
+The advantage of sharing inside Kubeflow is that it's more free-form and it
+works better for `.ipynb` files (Jupyter notebooks). This method also lets you
+share a compute environment, so you can share resources very easily. When you
+share a workspace, you share
+
+- A Private and Shared bucket (`/team-name` and `/shared/team-name`)
+- All notebook servers in the Kubeflow Namespace
+
 
 <!-- prettier-ignore -->
 !!! tip "Ask for help in production"
     The Advanced Analytics Workspace support staff are happy to help with
     production oriented use cases, and we can probably save you lots of time.
-    Don't be shy to [ask us for help](Help)!
+    Don't be shy about [asking us for help](Help)!
+    
+## Recommendation: Combine both
+
+It's a great idea to always use git, and using git along with shared workspaces
+is a great way to combine ad hoc sharing (through files) while also keeping your
+code organized and tracked.
+
+
+## Share data
+Sharing data can be done using **[MinIO](./MinIO.md/)**
 
 # Storage
 The platform provides several types of storage:
@@ -122,7 +174,7 @@ Depending on your use case, either disk or bucket may be most suitable:
 |   Type |                                                       Simultaneous Users |                                                   Speed | Total size               | Sharable with Other Users            |
 | -----: | -----------------------------------------------------------------------: | ------------------------------------------------------: | ------------------------ | ------------------------------------ |
 |   Disk |                                    One machine/notebook server at a time |                        Fastest (throughput and latency) | <=512GB total per drive  | No                                   |
-| Bucket | Simultaneous access from many machines/notebook servers at the same time | Fast-ish (Fast download, modest upload, modest latency) | Infinite (within reason) | [Yes](#sharing-from-private-buckets) |
+| Bucket | Simultaneous access from many machines/notebook servers at the same time | Fast-ish (Fast download, modest upload, modest latency) | Infinite (within reason) | [Yes] |
 
 <!-- prettier-ignore -->
 ??? info "If you're unsure which to choose, don't sweat it"
