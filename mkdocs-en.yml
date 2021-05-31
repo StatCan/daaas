@@ -57,7 +57,8 @@ nav:
       - Kubeflow Pipelines: 3-Pipelines/Kubeflow-Pipelines.md
       - PaaS Integration: 3-Pipelines/PaaS.md
       - Model Serving: 3-Pipelines/Serving.md
-  - Collaboration: Collaboration.md
+  - Collaboration: 
+      - Shared Namespaces: Collaboration.md
   - Storage: 
       - Disks: Storage.md
       - MinIO: MinIO.md
